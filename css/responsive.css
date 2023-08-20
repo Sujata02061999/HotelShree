@@ -18,6 +18,8 @@
         padding-left: .3125rem !important;
         padding-right: .3125rem !important;
     }
+    /* About */
+
 }
 @media (max-width:991px) {
     section{
@@ -40,6 +42,12 @@
    .booking-area{
     padding: 3.125rem 1.875rem;
    }
+   /* About */
+   .about_wrapper{
+    padding-top: 20rem !important;
+   }
+   /* Rooms */
+   
 }
 @media (max-width:767px) {
     h1{
@@ -56,5 +64,10 @@
     p{
         font-size: 1.8125rem;
         line-height: 1.5rem;
+    }
+    /* Rooms */
+    .room-items .room-content{
+       height: 50%;
+       font-size: 12rem;
     }
 }

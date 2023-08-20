@@ -245,3 +245,61 @@ p{
 .booking-area .form-select:focus{
     outline: none;
 }
+
+/* about */
+.about_wrapper{
+    padding-top: 9.375rem;
+}
+
+/* Rooms */
+.rooms_wrapper .room-items{
+    position: relative;
+    overflow: hidden;
+
+}
+.rooms_wrapper .room-items img{
+    width: 100%;
+    -webkit-transition:all 400ms ease-in 0s;
+    transition: all 400ms ease-in 0s;
+}
+.rooms_wrapper .room-items:hover img{
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+}
+.rooms_wrapper .room-items::before{
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   background-color: var(--bg-black);
+   opacity: 0;
+   z-index: 1;
+   -webkit-transition: all 400ms ease-in 0s;
+   transition: all 400ms ease-in 0s;
+}
+.rooms_wrapper .room-items:hover::before{
+    opacity:0.57 ; 
+}
+.rooms_wrapper .room-item-wrap{
+    position: absolute;
+    left: 1.8rem;
+    right: 1.8rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.rooms_wrapper .room-items .room-content{
+ border: .125rem solid var(--bg-white);
+ padding: 1rem 1.875rem;
+ -webkit-transform: scale3d(1.2, 1.2, 1.2);
+ transform: scale3d(1.2, 1.2, 1.2);
+ transition: all 500ms ease-in 0s;
+ opacity: 0;
+}
+.rooms_wrapper .room-items:hover .room-content{
+ opacity: 1;
+ -webkit-transform: scale3d(1,1,1);
+ transform: scale3d(1,1,1);
+}
