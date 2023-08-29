@@ -42,14 +42,15 @@ document.addEventListener("DOMContentLoaded", () =>{
         timer = setInterval(() => {
             current += increment;
             obj.textContent = current;
-            if(current == end){
+            if(current === end){
                 clearInterval(timer);
             }
         } , step);
 
     }
-    counter("count1" , 0, 786,3000);
-    counter("count2" , 100, 1777,2500);
-    counter("count3" , 0, 27,3000);
-    counter("count4" , 0, 3786,3000);
+    counter("count1" , 0, 11,4000);
+    counter("count2" , 0, 12,4000);
+    counter("count3" , 0, 10,5000);
+    counter("count4" , 0, 3,6000);
 })
+
